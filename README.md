@@ -32,9 +32,6 @@ I grew tired of rolling my own IEquatable<T> implementations for non-essential o
      
         public override bool Equals(object obj)
         {
-            if (obj == null)
-                return false;
-     
             return Equals(obj as Foo);
         }
      
@@ -78,9 +75,6 @@ I grew tired of rolling my own IEquatable<T> implementations for non-essential o
      
         public override bool Equals(object obj)
         {
-            if (obj == null)
-                return false;
-     
             return Equals(obj as Foo);
         }
      
